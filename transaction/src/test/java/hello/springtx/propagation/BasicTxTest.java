@@ -78,4 +78,21 @@ public class BasicTxTest {
 		log.info("트랜잭션2 롤백");
 		txManager.rollback(tx2);
 	}
+
+	@Test
+	void inner_commit() {
+		log.info("외부 트랜잭션 시작");
+		TransactionStatus outer = txManager.getTransaction(new DefaultTransactionAttribute());
+		log.info("outer.isNewTransaction()={}", outer.isNewTransaction());
+
+		log.info("내부 트랜잭션 시작");
+		TransactionStatus inner = txManager.getTransaction(new DefaultTransactionAttribute());
+		log.info("inner.isNewTransaction()={}", inner.isNewTransaction());
+
+		log.info("내부 트랜잭션 커밋");
+		txManager.commit(inner); // 논리적 커밋
+
+		log.info("외부 트랜잭션 커밋");
+		txManager.commit(outer); // 논리적 커밋, 모든 논리적 커밋이 되었고 신규 트랜잭션이므로 물리 트랜잭션이 커밋(롤백)된다.
+	}
 }
