@@ -25,7 +25,8 @@ class RunServiceTest {
 
 	@Test
 	void external_v2() {
-		runService.external_v2();
+		// runService.external_v2();
+		runService.external_v3();
 	}
 
 	@Test

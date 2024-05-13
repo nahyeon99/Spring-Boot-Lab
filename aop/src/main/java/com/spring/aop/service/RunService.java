@@ -21,6 +21,10 @@ public class RunService {
 		internal(); //내부 메서드 호출(this.internal())
 	}
 
+	void external_v3() {
+		log.info("call default method");
+	}
+
 	public void external_v2() {
 		log.info("call external");
 		runService.internal();
