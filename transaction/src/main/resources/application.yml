@@ -6,7 +6,7 @@ logging:
           interceptor: TRACE # 트랜잭션 프록시가 호출하는 트랜잭션의 시작과 종료를 명확하게 로그 확인 가능
         jdbc:
           datasource:
-            org.springframework.jdbc.datasource.DataSourceTransactionManager: DEBUG
+            DataSourceTransactionManager: DEBUG
         orm:
           jpa:
             JpaTransactionManager: DEBUG #JPA log
