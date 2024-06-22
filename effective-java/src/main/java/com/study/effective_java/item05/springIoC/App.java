@@ -1,4 +1,4 @@
-package com.study.effective_java.item06.springIoC;
+package com.study.effective_java.item05.springIoC;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

@@ -1,9 +1,9 @@
-package com.study.effective_java.item06.singleton;
+package com.study.effective_java.item05.singleton;
 
 import java.util.List;
 
-import com.study.effective_java.item06.DefaultDictionary;
-import com.study.effective_java.item06.Dictionary;
+import com.study.effective_java.item05.DefaultDictionary;
+import com.study.effective_java.item05.Dictionary;
 
 public class SpellChecker {
 

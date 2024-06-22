@@ -1,6 +1,6 @@
-package com.study.effective_java.item06.factorymethod;
+package com.study.effective_java.item05.factorymethod;
 
-import com.study.effective_java.item06.Dictionary;
+import com.study.effective_java.item05.Dictionary;
 
 public class SpellChecker {
 

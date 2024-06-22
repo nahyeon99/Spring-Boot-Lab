@@ -1,8 +1,8 @@
-package com.study.effective_java.item06.springIoC;
+package com.study.effective_java.item05.springIoC;
 
 import java.util.List;
 
-import com.study.effective_java.item06.Dictionary;
+import com.study.effective_java.item05.Dictionary;
 
 public class SpringDictionary implements Dictionary {
 	@Override
