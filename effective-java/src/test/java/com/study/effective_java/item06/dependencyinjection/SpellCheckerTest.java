@@ -10,7 +10,12 @@ class SpellCheckerTest {
 
 	@Test
 	void isValid() {
-		SpellChecker spellChecker = new SpellChecker(new DefaultDictionary());
+		// Case 1
+		SpellChecker spellChecker = new SpellChecker(DefaultDictionary::new);
+
+		// Case 2
+		SpellChecker spellChecker2 = new SpellChecker(DictionaryFactory::get);
+
 		assertTrue(spellChecker.isValid("test"));
 	}
 }
