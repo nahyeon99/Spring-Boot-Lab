@@ -1,4 +1,4 @@
-package com.study.effective_java.item06;
+package com.study.effective_java.item05;
 
 import java.util.List;
 

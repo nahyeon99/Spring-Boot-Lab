@@ -1,10 +1,10 @@
-package com.study.effective_java.item06.dependencyinjection;
+package com.study.effective_java.item05.dependencyinjection;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import com.study.effective_java.item06.DefaultDictionary;
+import com.study.effective_java.item05.DefaultDictionary;
 
 class SpellCheckerTest {
 

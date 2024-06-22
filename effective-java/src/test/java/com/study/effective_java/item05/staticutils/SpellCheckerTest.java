@@ -1,4 +1,4 @@
-package com.study.effective_java.item06.staticutils;
+package com.study.effective_java.item05.staticutils;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
