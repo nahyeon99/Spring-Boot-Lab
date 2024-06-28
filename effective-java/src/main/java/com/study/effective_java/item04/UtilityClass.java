@@ -16,7 +16,7 @@ public abstract class UtilityClass {
 	public static void main(String[] args) {
 		String hello = UtilityClass.hello();
 
-		UtilityClass utilityClass = new UtilityClass();
-		utilityClass.hello();
+		// UtilityClass utilityClass = new UtilityClass();
+		// utilityClass.hello();
 	}
 }

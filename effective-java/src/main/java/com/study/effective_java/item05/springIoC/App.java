@@ -7,6 +7,6 @@ public class App {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
 		SpellChecker spellChecker = applicationContext.getBean(SpellChecker.class);
-		spellChecker.isValid("hello")
+		spellChecker.isValid("hello");
 	}
 }
