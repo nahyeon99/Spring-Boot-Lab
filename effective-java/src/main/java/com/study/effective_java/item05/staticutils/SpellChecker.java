@@ -2,11 +2,12 @@ package com.study.effective_java.item05.staticutils;
 
 import java.util.List;
 
+import com.study.effective_java.item05.DefaultDictionary;
 import com.study.effective_java.item05.Dictionary;
 
 public class SpellChecker {
 
-	private static final Dictionary dictionary = new Dictionary();
+	private static final Dictionary dictionary = new DefaultDictionary();
 
 	private SpellChecker() {
 	}
